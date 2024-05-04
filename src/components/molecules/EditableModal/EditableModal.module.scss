@@ -1,0 +1,42 @@
+@import '@assets/scss/variables.scss';
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: $color-white;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-weight: $font-bold;
+  color: $color-black;
+  font-size: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.input {
+  margin: 50px 0 100px;
+  label {
+    font-size: 12px;
+    font-weight: $font-bold;
+    color: $color-deep-gray;
+  }
+}
+
+.button {
+  margin: 0 auto;
+  padding: 10px 30px;
+}
