@@ -24,7 +24,7 @@ export const DatatableBody = ({ data, onClick }: IDatatableBodyProps) => {
             Boolean(data.length) && data.map((element) => {
                 return (
                     <tr key={element[0]}>
-                        {Object.values(element).map((value) => <td key={value}>{ formattedRender(value) }</td>)}
+                        <>{Object.values(element).map((value) => <td key={value}>{ formattedRender(value) }</td>)}</>
                         <td onClick={handleChangeElementState(element.id)}>
                             Edit
                         </td>

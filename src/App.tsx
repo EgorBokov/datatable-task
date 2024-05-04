@@ -1,7 +1,9 @@
+import { ContainerLayout } from '@components/layouts/ContainerLayout'
+
 export const App  = () => {
     return (
-        <div>
+        <ContainerLayout>
             Main Page.
-        </div>
+        </ContainerLayout>
     );
 };

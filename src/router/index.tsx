@@ -9,24 +9,30 @@ import { NotFoundPage } from '@pages/NotFoundPage'
 export const routes = [
     {
         path: '/',
-        element: <App />
+        element: <App />,
     },
     {
         path: '/products',
-        element: <ProductsPage />
+        element: <ProductsPage />,
     },
     {
         path: '/prices',
-        element: <PricesPlanPage />
+        element: <PricesPlanPage />,
     },
     {
         path: '/pages',
-        element: <PagesListPage />
+        element: <PagesListPage />,
     },
     {
         path: '*',
         element: <NotFoundPage />
     }
+]
+
+export const routesToRender = [
+    { path: '/pages', title: 'Pages' },
+    { path: '/prices', title: 'Prices' },
+    { path: '/products', title: 'Products' },
 ]
 
 export const router = createBrowserRouter(routes)
