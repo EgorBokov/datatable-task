@@ -6,9 +6,27 @@
   column-gap: 5px;
 }
 
+.inputWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
 .input {
+  width: 100%;
   padding: 12px 20px;
   border-radius: 12px;
   outline: none;
   border: 2px solid $color-light-gray;
+}
+
+.withIconInput {
+  padding-right: 30px;
+}
+
+.withIcon {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
 }

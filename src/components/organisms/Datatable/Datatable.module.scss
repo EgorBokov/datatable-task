@@ -1,0 +1,63 @@
+@import '@assets/scss/variables.scss';
+
+.tableWrapper {
+  width: 100%;
+}
+
+.filterContainer {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.tableContainer {
+  width: 100em;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table {
+  display: block;
+  overflow: hidden;
+  table-layout: auto;
+  border-collapse: collapse;
+  box-shadow: 0 10px 10px $color-white;
+  border-radius: 10px;
+  white-space: nowrap;
+  width: 100em;
+  max-width: 80%;
+  margin: auto;
+  overflow-x: auto;
+
+  th, td {
+    padding: 0.8rem;
+  }
+
+  td {
+    border-top: 0.5px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  thead {
+    font-size: 20px;
+    font-weight: $font-bold;
+    background-color: $color-light-gray;
+  }
+
+  tbody {
+    tr:nth-of-type(even) {
+      background-color: $color-light-gray;
+    }
+
+    tr td:first-child {
+      color: $color-light-blue;
+    }
+  }
+}
+
+.expand {
+  width: 100%;
+}
